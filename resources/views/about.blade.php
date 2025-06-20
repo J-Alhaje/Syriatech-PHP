@@ -19,6 +19,17 @@
 </head>
 
 <body class="bg-dark">
+    @include('navbar')
+    <div class="container mt-5">
+        <div class="card p-4">
+            <div class="card-header bg-primary text-white">
+                <h3>About Us</h3>
+            </div>
+            <div class="card-body">
+                <!-- Add your about page content here -->
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
