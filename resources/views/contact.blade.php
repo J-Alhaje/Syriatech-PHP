@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="card p-4 mt-4">
-            <div class="card-header bg-success text-white">
+            <div class="card-header bg-primary text-white">
                 <h4>Send a Message</h4>
             </div>
             <div class="card-body">
