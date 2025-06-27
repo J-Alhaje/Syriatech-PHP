@@ -14,11 +14,11 @@ Route::get('/laravel/doc', function () {
 })->name('doc');
 
 Route::get('/contact', function () {
-    return view('contact');
+    return view('pages/contact');
 })->name('contact');
 
 Route::get('/about-us', function () {
-    return view('about');
+    return view('pages/about');
 })->name('about');
 
 Route::get('/logging', function () {

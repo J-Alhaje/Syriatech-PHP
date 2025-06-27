@@ -18,7 +18,7 @@
     <title>من نحن</title>
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: #5e63d4;
             color: #212529;
             direction: rtl;
             text-align: right;
@@ -34,9 +34,10 @@
             text-align: right;
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-dark">
+<body>
     @include('navbar')
     <div class="container mt-5 ">
         <div class="card p-4">
@@ -50,7 +51,7 @@
                     نقدم شروحات وأدلة عملية تساعد المطورين الجدد والمحترفين على بناء تطبيقات ويب احترافية بسهولة.
                 </p>
                 <p>
-                    يضم فريقنا مجموعة من المطورين ذوي الخبرة في مجال البرمجة وتطوير البرمجيات، ونسعى دائمًا لتقديم محتوى
+                    يضم فريقنا مجموعة من المطورين ذوي الخبرة في مجال البرمجة وتطوير البرمجيات، ونسعى دائماً لتقديم محتوى
                     عالي الجودة باللغة العربية.
                 </p>
                 <hr>

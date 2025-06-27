@@ -43,9 +43,67 @@
             <div class="card-body">
                 <h2 class="card-title">المسارات (Routes)</h2>
                 <p class="card-text">
-                    تُعرّف المسارات في ملف <code>routes/web.php</code> لتحديد كيفية استجابة التطبيق للطلبات المختلفة.
-                    <br>
+                    تُعرّف المسارات في ملف <code>routes/web.php</code> لتحديد كيفية استجابة التطبيق للطلبات
+                    المختلفة.<br>
                     <code>Route::get('/', function () { return view('welcome'); });</code>
+                </p>
+            </div>
+        </div>
+        <div class="card bg-light mb-3">
+            <div class="card-body">
+                <h2 class="card-title">أنواع المسارات</h2>
+                <p class="card-text">
+                    يدعم لارافيل عدة أنواع من المسارات:<br>
+                <ul>
+                    <li><strong>GET:</strong> لعرض الصفحات أو البيانات.<br>
+                        <code>Route::get('/about-us', function () { return view('pages/about'); });</code>
+                    </li>
+                    <li class="mt-2"><strong>POST:</strong> لإرسال البيانات (مثل النماذج).<br>
+                        <code>Route::post('/contact', [ContactController::class, 'send']);</code>
+                    </li>
+                    <li class="mt-2"><strong>Route::view:</strong> لعرض صفحة مباشرة بدون منطق إضافي.<br>
+                        <code>Route::view('/welcome', 'welcome');</code>
+                    </li>
+                    <li class="mt-2"><strong>Route::redirect:</strong> لإعادة التوجيه لمسار آخر.<br>
+                        <code>Route::redirect('/old', '/new');</code>
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="card bg-light mb-3">
+            <div class="card-body">
+                <h2 class="card-title">تسمية المسارات (Route Names)</h2>
+                <p class="card-text">
+                    يمكنك إعطاء اسم لكل مسار لتسهيل توليد الروابط:<br>
+                    <code>Route::get('/contact', function () { return view('pages/contact');
+                        })->name('contact');</code><br>
+                    ثم يمكنك استخدام <code>route('contact')</code> في العروض أو المتحكمات.
+                </p>
+            </div>
+        </div>
+        <div class="card bg-light mb-3">
+            <div class="card-body">
+                <h2 class="card-title">المسارات مع المتحكمات</h2>
+                <p class="card-text">
+                    يمكنك ربط المسار بمتحكم:<br>
+                    <code>Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');</code>
+                </p>
+            </div>
+        </div>
+        <div class="card bg-light mb-3">
+            <div class="card-body">
+                <h2 class="card-title">أمثلة من التطبيق</h2>
+                <p class="card-text">
+                    <strong>بعض المسارات المعرفة في هذا المشروع:</strong>
+                <ul>
+                    <li><code>Route::get('/', function () { return view('home'); })->name('home');</code></li>
+                    <li><code>Route::get('/doc', function () { return view('doc'); })->name('doc');</code></li>
+                    <li><code>Route::get('/contact', function () { return view('pages/contact');
+                            })->name('contact');</code></li>
+                    <li><code>Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');</code>
+                    </li>
+                </ul>
                 </p>
             </div>
         </div>

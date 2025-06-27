@@ -35,8 +35,9 @@
                 <style>
                     .navbar-nav .nav-link.active,
                     .navbar-nav .nav-link:hover {
-                        color: #0d6efd !important;
-                        background: rgba(255, 255, 255, 0.08);
+                        font-weight: bold;
+                        color: #ffffff !important;
+                        background: rgb(94, 99, 212, 0.7);
                         border-radius: 0.5rem;
                     }
                 </style>

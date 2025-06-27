@@ -18,11 +18,15 @@
     <title>الصفحة الرئيسية</title>
     <style>
         body {
-            font-family: 'Cairo', Tahoma, Arial, sans-serif;
+            font-family: Tahoma, Arial, sans-serif;
+            background-color: #5e63d4;
+            color: #212529;
+            direction: rtl;
+            text-align: right;
         }
 
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1516116216624-53e697fedbea?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
             color: #fff;
             min-height: 60vh;
             display: flex;
@@ -70,10 +74,10 @@
             margin-bottom: 1rem;
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-dark">
+<body>
     @include('navbar')
     <div class="hero">
         <h1>مرحباً بكم في موقعنا</h1>
@@ -101,22 +105,16 @@
                 <div class="feature-card h-100 text-end">
                     <div class="feature-icon"><i class="fas fa-users"></i></div>
                     <h4 class="fw-bold mb-2">دعم فني متواصل</h4>
-                    <p>فريقنا جاهز لمساعدتك على مدار الساعة في أي وقت تحتاج فيه للدعم.</p>
+                    <p>
+                        الدعم الفني المتواصل يضمن وجود فريق جاهز لمساعدة المستخدمين وحل مشاكلهم في أي وقت. يشمل ذلك الرد
+                        على الاستفسارات، معالجة الأعطال، وتقديم التحديثات اللازمة لضمان استمرارية الخدمة.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-
-    <!-- https://cdnjs.com/libraries/popper.js/2.5.4 -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script> -->
-    @include('footer')
+    @include('/pages/footer')
     <!-- More: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
 
 </body>
